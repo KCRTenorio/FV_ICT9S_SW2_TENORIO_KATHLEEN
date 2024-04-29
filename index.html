@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q4 Practice 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family-Dancing+Script">
+
+<style>
+    h1{
+        font-family: Segoe UI Black;
+        color: darkred;
+        letter-spacing: 20px;
+    }
+    h2{
+       font-family: Arial; 
+       color: darkred;
+       font-size: 20px;
+    }
+    label{
+        font-family: Segoe UI Black;
+        color: darkred;}
+
+    button{
+        font-family: Segoe UI Black;
+        color: whitesmoke;}
+
+    body{
+            background-color: lightgrey;}
+
+    img{
+        alignment: right;
+    }
+
+</style>
+</head>
+<body>
+
+<center>
+    <h1> Mara's Calculator</h1>
+    <img src="https://images.freeimages.com/image/previews/319/thai-character-png-traditional-culture-5693977.png?fmt=webp&w=500" width="150px" height="150px">
+    <h2>Hi! I'm Mara and I will help you calculate.<br><br>
+    (1) Write a value for X and Y<br>
+    (2) Press one of the buttons to find the Sum,Product,Quotient,Difference.</h2>
+
+    <form class="form-group">
+        <label id="num1">Enter the value for X</label>
+            <input type="number" class="form-control bg-warning" id="input1" placeholder="Enter your X here">
+        <label id="num2">Enter the value for Y</label>
+             <input type="number" class="form-control bg-warning" id="input2" placeholder="Enter your Y here">
+
+<br><br>
+        <button class="btn btn-danger" id="button1" onclick="add()">Sum of X and Y</button>
+        <button class="btn btn-danger" id="button2" onclick="product()">Product of X and Y</button>
+        <button class="btn btn-danger" id="button3" onclick="divide()">Quotient of X and Y</button>
+        <button class="btn btn-danger" id="button3" onclick="divide()">Difference of X and Y</button>
+    </form>
+</center>
+
+<script type="text/javascript">
+    function add(){
+        var num1 = document.getElementById("input1").value; //asign value
+        var num2 = document.getElementById("input2").value; //asign value
+        var sum = Number(num1) + Number(num2); //add the numbers
+        window.alert("The sum of X and Y is: " + sum);
+    }
+    function product(){
+        var num1 = document.getElementById("input1").value; //asign value
+        var num2 = document.getElementById("input2").value; //asign value
+        var product = Number(num1) + Number(num2); //add the numbers
+        window.alert("The product of X and Y is: " + product);
+    }
+     function divide(){
+        var num1 = document.getElementById("input1").value; //asign value
+        var num2 = document.getElementById("input2").value; //asign value
+        var quotient = Number(num1) + Number(num2); //add the numbers
+        window.alert("The quotient of X and Y is: " + quotient);
+    }
+         function subtract(){
+        var num1 = document.getElementById("input1").value; //asign value
+        var num2 = document.getElementById("input2").value; //asign value
+        var difference = Number(num1) + Number(num2); //add the numbers
+        window.alert("The difference of X and Y is: " + difference);
+    }
+
+</script>
+</body>
+</html>
